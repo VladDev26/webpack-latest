@@ -1,0 +1,47 @@
+// [class^="icon-"], [class*=" icon-"] {
+//   font-family: 'icomoon' !important;
+//   speak: none;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+
+//   font-size: 30px;
+// }
+
+.icomoon{
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 30px;
+  
+  &--arrow1:before{content: "\e900";}
+  &--arrow:before{content: "\e901";}
+  &--clip:before{content: "\e92f";}
+  &--diagonal-arrow:before{content: "\e930";}
+  &--down-arrow2:before{content: "\e931";}
+  &--envelope:before{content: "\e932";}
+  &--facebook:before{content: "\e933";}
+  &--forward-arrow:before{content: "\e934";}
+  &--google-plus:before{content: "\e935";}
+  &--noun_802209_cc:before{content: "\e936";}
+  &--smartphone-call2:before{content: "\e937";}
+  &--twitter:before{content: "\e938";}
+  &--user:before{content: "\e939";}
+  &--vk:before{content: "\e93a";}
+
+  color:#fff;
+  &:hover{opacity:.7;}
+}

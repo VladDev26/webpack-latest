@@ -1,0 +1,27 @@
+{
+  "name": "b4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "wp": "webpack",
+    "dev": "webpack && webpack-dev-server --no-info --color",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "extract-loader": "^0.1.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "node-sass": "^4.5.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1"
+  }
+}
