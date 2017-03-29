@@ -4,13 +4,22 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {	
 	entry: path.resolve(__dirname, 'src', 'index'),
+	
 	output: {
 		path: path.join(__dirname, 'dist'),
-		// publicPath: 'dist',
-		filename: 'bundle.js'
+		// publicPath: '/',
+		filename: 'scripts/bundle.js'
 	},
 	module: {
 		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
+				query: {
+			    	presets: ['es2015', 'stage-2', 'react']
+			    }
+			},
 			{
 				test: /\.html$/,
 				use: 'file-loader?name=[name].[ext]'
