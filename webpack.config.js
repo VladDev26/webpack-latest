@@ -7,19 +7,19 @@ module.exports = {
 	
 	output: {
 		path: path.join(__dirname, 'dist'),
-		// publicPath: '/',
+		// publicPath: '/dist',
 		filename: 'scripts/bundle.js'
 	},
 	module: {
 		rules: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader',
-				query: {
-			    	presets: ['es2015', 'stage-2', 'react']
-			    }
-			},
+			// {
+			// 	test: /\.js$/,
+			// 	exclude: /node_modules/,
+			// 	loader: 'babel-loader',
+			// 	query: {
+			//     	presets: ['es2015', 'stage-2', 'react']
+			//     }
+			// },
 			{
 				test: /\.html$/,
 				use: 'file-loader?name=[name].[ext]'
@@ -27,7 +27,7 @@ module.exports = {
 			{ 
 				test: /\.scss$/i, 
 				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
+					// fallback: 'style-loader',
 					use: [
 						'css-loader?-url', //disables url inline loading
 						'sass-loader'

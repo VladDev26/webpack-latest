@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "author": "gook",
+      "title": "superGook",
+      "id": 1
+    },
+    {
+      "author": "gook",
+      "title": "superGook",
+      "id": 6
+    },
+    {
+      "author": "gook",
+      "title": "superGook",
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
